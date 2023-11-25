@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Учет задолженности клиентов</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Учет задолженности клиентов</h1>
+        
+        <!-- Форма для создания карточки клиента -->
+        <div id="customer-form">
+            <label for="customer-name">Имя клиента:</label>
+            <input type="text" id="customer-name" placeholder="Введите имя клиента">
+
+            <label for="customer-debt">Долг клиента:</label>
+            <input type="number" id="customer-debt" placeholder="Введите сумму долга">
+
+            <button onclick="addCustomer()">Добавить клиента</button>
+        </div>
+
+        <!-- Список карточек клиентов -->
+        <div id="customer-list"></div>
+
+        <!-- Общая сумма долга в смене -->
+        <div id="total-debt">
+            <p>Общая сумма долга в смене: <span id="total-debt-amount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
